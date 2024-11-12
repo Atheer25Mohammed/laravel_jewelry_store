@@ -1,0 +1,1 @@
+# laravel_jewelry_store
