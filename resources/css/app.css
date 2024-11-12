@@ -1,0 +1,39 @@
+/* إضافة خط Almarai من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+/* جعل الشريط الجانبي ثابتًا عند التمرير */
+.bg-dark {
+    position: fixed;
+    height: 100vh; /* ملء كامل الشاشة */
+    width: 250px;  /* عرض الشريط الجانبي */
+    top: 0; /* تثبيته في أعلى الصفحة */
+    left: 0; /* تثبيته على اليسار */
+    z-index: 999; /* التأكد من أنه فوق المحتوى */
+    overflow-y: auto; /* إضافة إمكانية التمرير العمودي إذا كان المحتوى أكثر من الشاشة */
+}
+
+/* التأكد من أن المحتوى لا يلتصق بالشريط الجانبي */
+.container-fluid {
+    margin-left: 250px; /* إضافة مساحة على اليسار (عرض الشريط الجانبي) */
+}
+
+/* استخدام خط Almarai في النصوص العامة */
+body {
+    font-family: 'Almarai', sans-serif;
+}
+
+/* استخدام الخط في العناوين */
+h1, h2, h3, h4 {
+    font-family: 'Almarai', sans-serif;
+}
+
+/* تحسين عرض الشريط الجانبي في الأجهزة المحمولة */
+@media (max-width: 768px) {
+    .bg-dark {
+        width: 200px; /* عرض أصغر في الأجهزة المحمولة */
+    }
+
+    .container-fluid {
+        margin-left: 60px; /* تعديل الهامش في الأجهزة المحمولة */
+    }
+}
