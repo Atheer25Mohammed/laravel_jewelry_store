@@ -1,8 +1,7 @@
-<!-- الشريط الجانبي -->
+<!-- resources/views/layouts/sidebar.blade.php -->
 <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark text-white">
     <div class="d-flex flex-column align-items-start align-items-sm-start px-3 pt-2 text-white min-vh-100">
         
-       
         <!-- القائمة الجانبية -->
         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start align-items-sm-start" id="menu">
             
@@ -42,7 +41,7 @@
         <div class="dropdown pb-4">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30" class="rounded-circle">
-                <span class="d-none d-sm-inline mx-1">اسم المستخدم</span>
+                <span class="d-none d-sm-inline mx-1">{{ Auth::user()->name }}</span> <!-- هنا يتم عرض اسم المستخدم الحالي -->
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                 <li><a class="dropdown-item" href="#">مشروع جديد...</a></li>

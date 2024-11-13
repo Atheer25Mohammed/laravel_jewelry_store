@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Adi موقع للمجوهرات </title>
+    <title>Adi - موقع للمجوهرات</title>
 
     <!-- ربط CSS الخاص بالموقع -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -48,7 +48,8 @@
 
             <!-- محتوى الصفحة -->
             <div class="col-md-9 ms-sm-auto col-lg-10 px-4">
-                @yield('content')
+                <!-- تضمين المحتوى الخاص بكل صفحة هنا -->
+                @yield('content') 
             </div>
         </div>
     </div>

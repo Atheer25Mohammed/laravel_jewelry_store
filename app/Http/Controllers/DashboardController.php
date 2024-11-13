@@ -9,9 +9,11 @@ class DashboardController extends Controller
 {
     public function index()
     {
+        
         $jewelriesCount = Jewelry::count();
         $customersCount = Customer::count();
-
+        
         return view('dashboard.index', compact('jewelriesCount', 'customersCount'));
     }
+    
 }
